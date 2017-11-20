@@ -37,7 +37,7 @@
     },
     methods: {
       updateSource: function (source){
-          if(source==="") source='the-guardian-uk';                                                                    //&apiKey=[YOUR_OWN_API_KEY_from https://newsapi.org/]
+        //&apiKey=[YOUR_OWN_API_KEY_from https://newsapi.org/]
         this.$http.get('https://newsapi.org/v1/articles?source=' + source + '&apiKey=7573228af0da456b98c14efdbf5c75d6')
           .then(response =>{
             this.articles = response.data.articles;

@@ -23,7 +23,7 @@ export default {
     }
   },
   methods: {
-    sourceChanged: (source) =>{
+    sourceChanged: function (source){
       this.source = source;
       console.log("SourceCHanged: "+source);
     }
